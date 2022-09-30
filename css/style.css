@@ -7,7 +7,7 @@
 }
 #main-page img{
     width: 40%;
-    height: 70vh;
+    height: 65vh;
     margin: 5%;
     position: relative;
 }
@@ -57,11 +57,11 @@ margin:35px;
     font-size: 1.6rem;
     padding:10px;
 }
-.userOptions p {
+.user-options p {
     font-size: 1.2rem;
 }
 
-.userOptions .icon {
+.user-options .icon {
     border: 2px solid black;
     /* border-radius: 25%; */
     padding: 5px;
