@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+}
+#main-page{
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+#main-page img{
+    width: 40%;
+    height: 70vh;
+    margin: 5%;
+    position: relative;
+}
+#main-text{
+    top:25%;
+    right:10%;
+    position:absolute;
+    text-align: center;
+}
+#main-text h1{
+font-size: 4rem;
+}
+#main-text p{
+font-size: 2rem;
+margin:35px;
+}
+
+#main-text a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    background: blue;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+#game-area{
+    height:700px;
+    width:600px;
+    background-color: #d8f7bf;
+     /* background: linear-gradient(#e66465, #9198e5); */
+    /* background:linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
+    top: 20px;
+    left: 20%;
+    position: absolute;
+    text-align: center;
+    border: 1px solid red;
+}
+#heading{
+    border-bottom: 2px solid red;
+
+}
+#heading h1{
+    font-size: 2.5rem;
+    padding:20px;
+}
+#game-area h2{
+    font-size: 1.6rem;
+    padding:10px;
+}
+.userOptions p {
+    font-size: 1.2rem;
+}
+
+.userOptions .icon {
+    border: 2px solid black;
+    /* border-radius: 25%; */
+    padding: 5px;
+    margin: 20px;
+    cursor: pointer;
+    background: transparent;
+    width:50px;
+}
+
+#user-computer-choice {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    padding: 10px;
+   }
+   input {
+    height: 40px;
+    background: transparent;
+    font-size: 1.2rem;
+}
+
+#mid h2 {
+    margin-top: 10%;
+    font-size: 2.5rem;
+    border: 1px solid red;
+    padding: 15px;
+}
+
+#result {
+    padding: 15px;
+    text-align: left;
+}
