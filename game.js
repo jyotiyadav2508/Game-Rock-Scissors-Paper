@@ -10,6 +10,7 @@ userOptions.forEach(icon => icon.addEventListener("click", getUserChoice));
 
 function getUserChoice(event) {
     userChoice = event.target.id;
+    if(clickCount < 5){
     clickCount = ++clickCount;
     // document.getElementById("user-choice").innerHTML = userChoice;
     document.getElementById("user-choice").innerHTML = `<i class= "fa-solid fa-hand-${userChoice} fa-2x"></i>`;
@@ -18,15 +19,14 @@ function getUserChoice(event) {
     let compareResult = checkResult();
     document.getElementById("compare-result").innerHTML = compareResult;
     console.log(userChoice, computerChoice, compareResult, clickCount);
-    console.log(userScore, computerScore);
+    console.log(userScore, computerScore);}
     if (clickCount === 5) {
         let winnerName = displayWinner();
         document.getElementById("winner").innerHTML = winnerName;
-        alert("Game Finished");
-        
+        alert("Game Over! Please restart to play again");   
     }
-    
 }
+
 
 function getComputerChoice() {
     let randomNumber = Math.random();
@@ -54,17 +54,12 @@ function checkResult() {
 function increaseUserScore() {
     userScore = parseInt(document.getElementById('user-score').innerHTML);
     document.getElementById('user-score').innerHTML = ++userScore;
-    // if(userScore === 5){
-    // displayWinner();
 
 }
 
 function increaseComputerScore() {
     computerScore = parseInt(document.getElementById('computer-score').innerHTML);
     document.getElementById('computer-score').innerHTML = ++computerScore;
-    //     if (computerScore === 5){
-    //  displayWinner();
-    //     }
 }
 
 function displayWinner() {

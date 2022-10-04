@@ -37,59 +37,60 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
 - __Header__
 
-  - Featured at the top-left of the page, the header shows the logo of the website.
+  - Featured at the top-left corner of the page, the header shows the logo of the website.
 
   ![logo]()
 
 - __Heading and Image__
 
   - This header cleary tells the name of the game which user is going to play.
-  - The image shows the name of all three icons, with which we are gonig to play the game and also describe the rules of the game "Rock, scissors, Paper".
+  - The image shows the name of all three icons, with which we are gonig to play the game and also describes the rules of the game "Rock, scissors, Paper".
   - This game is played between user and computer.
 
    ![Image of Home page ]()
 
 - __Nav Button__ 
 
-  - Featured at the end of the page is the nav Button, which allow the user to easily navigate to game page and start their game.  
+  - Featured at the end of the page is the Start-Game Button, which allows the user to easily navigate to the game page.  
 
    ![Start button]()
 
 - __The Game Section__  
 
-  -It starts with the name of the game- Rock, Scissors, Paper.
+  -It starts with the name of the game: Rock, Scissors, Paper.
 
    ![heading]()
 
 - __The Game Options__  
 
-  - The Game options include a clear instruction and then a choice of options to choose from to play: Rock, Scissors, Paper. These options are intractive icons that the user can click to make their choice and play the game.
+  - The Game options section includes the following:
+    - clear instructions,
+    - choice of options to choose from
+    - these options are intractive icons that the user can click to make their choice and play the game.
 
    ![ Game Options]()
 
  - __Choice Display Section__ 
 
-   - When user clicks an option, the image relating to their choice is shown on the user-choose area.
-   - The Java Script code chooses a random option for the computer player, displays the image relating to computer's choice on computer-choose area.
+   - When user clicks an option, the image relating to their choice is shown on the user-choice area.
+   - The Java Script code chooses a random option for the computer player and displays the image relating to computer's choice on computer-choice  area.
 
     ![Choice display]() 
 
  - __The game Result__ 
 
-   - After user choice and computer choice, Java Script code determines the result and diaplay on Result's input.
-   - (If user wins, then increase 1 point in user-score's input.
-   - If computer wins, then increase 1 point in computer-score's input.
-   - If both choose same icon, then it's a draw and no increment in score.)
-   - The score is updated for either the user or the computer, depending on who won.
-   - An alert messsage comes, when game is over and then the winner is announced.
+   - After each user attempt, Java Script generates computer choice randomly and determines and displays its result. 
+   - The score is updated for either the user or the computer, depending on who wins.
+   - After 5 attempts, game winner is announced and an alert is generated.
+   - After game over alert, user can restart the game by clicking the restart button.
 
    ![Result display]() 
 
 
 ### Features left to implement
 
-  - Add the games rules either in details tag or in the footer, which user can see in game page.
-  - Add a Exit button which navigate to home page.
+  - Add the game rules either in details tag or in the footer, which user can see in game page.
+  - Add an Exit button which navigate to the home page.
   - When there is time, I would like to expand my website by adding a Quiz.
 
 ## Testing  
@@ -103,6 +104,8 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
 ### Unfixed bugs
 
+  - Alert message is shown before displaying the increased score from last click and the game winner.
+  - User Choice is not working while clicking on the text instead of icon.
 
 ## Deployment
 
@@ -116,4 +119,4 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 ## Credits 
 
   - The icons in game area were taken from https://fontawesome.com/icons.
-  - The image used on home page was taken from https://www.google.com/.
+  - The image used on home page was taken from google search result.
