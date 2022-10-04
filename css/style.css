@@ -7,28 +7,22 @@
 #logo{
     font-size: 2rem;
     padding: 10px;
-    margin-left: 30px;
+    margin-left:5%;
     font-family: 'Kalam', cursive;
     color:rgb(89, 62, 11);
     text-decoration: underline;
 }
-   
 
 body{
     background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-    /* font-family: 'Noto Sans', sans-serif; */
     
 }
 #main-page img{
     width: 40%;
     height: 60vh;
     margin-top:10px;
-    /* position: relative; */
 }
 #main-page{
-    /* top:25%;
-    right:10%;
-    position:absolute; */
     text-align: center;
 }
 #main-page h1{
@@ -47,8 +41,10 @@ margin:10px;
     color: white;
     border-radius:10px;
     padding:5px;
-    /* margin-top:5px; */
 }
+
+/* Media query for home page */
+
 @media screen and (max-width:785px){
     #main-page img{
         width:50%;
@@ -74,23 +70,23 @@ margin:10px;
 }
 
 #game-area{
-    height:700px;
-    width:600px;
-    background-color: #cde6bb;
-    /* background:linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
-    top: 20px;
-    left: 20%;
+    height:730px;
+    width:660px;
+    /* background-color: #cde6bb; */
+    background:linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    top:10px;
+    left: 25%;
     position: absolute;
     text-align: center;
     border: 1px solid red;
 }
 #heading{
-    border-bottom: 2px solid red;
+    border-bottom: 1.2px solid red;
 
 }
 #heading h1{
     font-size: 2.5rem;
-    padding:20px;
+    padding:10px;
 }
 #game-area h2{
     font-size: 1.6rem;
@@ -101,8 +97,8 @@ margin:10px;
 }
 
 .user-options .icon {
-    border: 2px solid black;
-    /* border-radius: 25%; */
+    border: 1px solid black;
+    border-radius: 25%;
     padding: 5px;
     margin: 20px;
     cursor: pointer;
@@ -124,15 +120,19 @@ margin:10px;
 }
 
 #mid h2 {
-    margin-top: 10%;
-    font-size: 2.5rem;
+    margin-top: 12%;
+    font-size: 2.7rem;
     border: 1px solid red;
-    padding: 15px;
+    padding: 10px;
 }
 
 #result {
     padding: 15px;
     text-align: left;
+    
+}
+#winner{
+    color:red;
 }
 #restart{
     font-size:1.5rem;

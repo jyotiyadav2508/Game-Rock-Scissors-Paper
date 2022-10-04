@@ -69,9 +69,10 @@ function displayWinner() {
     if (userScore > computerScore) {
         return "Congratulations ! User Wins..."
     } else if (userScore < computerScore) {
-        return "Computer wins the game"
+        return "Computer wins the game!"
 
     } else(userScore === computerScore); {
         return "it's a draw!"
     }
-}
+    style.displayWinner = red;
+} 
