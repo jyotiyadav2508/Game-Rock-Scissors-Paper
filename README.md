@@ -1,5 +1,5 @@
 # Fun Club
-The live link can be found here - (....................)
+The live link can be found here - https://jyotiyadav2508.github.io/Game-Rock-Scissors-Paper-/
 
 Fun Club website provides a game "Rock-Scissors-Paper". This site is targeted towards adults and children to have fun time, reduces stress, to have a little break during work and study. It is not always possible to play with friends; therefore, this game provides Computer as your opponent. The computer chooses its options randomly, therefore game gives you a fair result. User of this game will learn the rules of Rock, Scissors, Paper which they can apply in decision making with others in their lives.
 
@@ -111,6 +111,6 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
   - From the side menu, select pages under Code and automation, select the main Branch, then click to save button.
   - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-  The live link can be found here -
+  The live link can be found here - https://jyotiyadav2508.github.io/Game-Rock-Scissors-Paper-/
 
 ## Credits 
