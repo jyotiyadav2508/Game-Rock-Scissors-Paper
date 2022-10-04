@@ -86,24 +86,24 @@ margin:10px;
 }
 #heading h1{
     font-size: 2.5rem;
-    padding:10px;
+    padding:15px;
 }
 #game-area h2{
     font-size: 1.6rem;
-    padding:10px;
+    padding:5px;
 }
 .user-options p {
     font-size: 1.2rem;
 }
 
 .user-options .icon {
-    border: 1px solid black;
+    border: 1.5px solid black;
     border-radius: 25%;
-    padding: 5px;
-    margin: 20px;
+    padding: 10px;
+    margin: 30px;
     cursor: pointer;
     background: transparent;
-    width:50px;
+    width:70px;
 }
 
 #user-computer-choice {
@@ -111,7 +111,7 @@ margin:10px;
     justify-content: space-between;
     border-top: 1px solid red;
     border-bottom: 1px solid red;
-    padding: 10px;
+    padding: 5px;
    }
    input {
     height: 40px;

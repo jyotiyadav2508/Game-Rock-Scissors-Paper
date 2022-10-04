@@ -1,8 +1,8 @@
-let userChoice
-let computerChoice
-let computerScore=0
-let userScore=0
-let clickCount = 0
+let userChoice;
+let computerChoice;
+let computerScore=0;
+let userScore=0;
+let clickCount =0;
 
 let userOptions = document.querySelectorAll(".icon");
 userOptions.forEach(icon => icon.addEventListener("click", getUserChoice));
@@ -20,10 +20,12 @@ function getUserChoice(event) {
     console.log(userChoice, computerChoice, compareResult, clickCount);
     console.log(userScore, computerScore);
     if (clickCount === 5) {
-        winnerName = displayWinner();
+        let winnerName = displayWinner();
         document.getElementById("winner").innerHTML = winnerName;
         alert("Game Finished");
+        
     }
+    
 }
 
 function getComputerChoice() {
@@ -45,7 +47,7 @@ function checkResult() {
         increaseUserScore();
         return `User Wins!  (${userChoice} beats ${computerChoice})`;
     } else {
-        return "It's a draw!"
+        return "It's a draw!";
     }
 }
 
@@ -67,12 +69,12 @@ function increaseComputerScore() {
 
 function displayWinner() {
     if (userScore > computerScore) {
-        return "Congratulations ! User Wins..."
+        return "Congratulations ! User Wins...";
     } else if (userScore < computerScore) {
-        return "Computer wins the game!"
+        return "Computer wins the game!";
 
-    } else(userScore === computerScore); {
-        return "it's a draw!"
+    } else(userScore = computerScore); {
+        return "it's a draw!";
     }
     style.displayWinner = red;
 } 

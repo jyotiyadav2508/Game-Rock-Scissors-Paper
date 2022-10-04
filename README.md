@@ -114,3 +114,6 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
   The live link can be found here - https://jyotiyadav2508.github.io/Game-Rock-Scissors-Paper-/
 
 ## Credits 
+
+  - The icons in game area were taken from https://fontawesome.com/icons.
+  - The image used on home page was taken from https://www.google.com/.
