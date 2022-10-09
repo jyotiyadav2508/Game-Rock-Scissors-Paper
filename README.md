@@ -44,7 +44,7 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 - __Heading and Image__
 
   - This header cleary tells the name of the game which user is going to play.
-  - The image shows the name of all three icons, with which we are gonig to play the game and also describes the rules of the game "Rock, scissors, Paper".
+  - The image shows the name of all three icons, with which we are going to play the game and also describes the rules of the game "Rock, scissors, Paper".
   - This game is played between user and computer.
 
    ![Image of Home page ]()
@@ -57,7 +57,7 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
 - __The Game Section__  
 
-  -It starts with the name of the game: Rock, Scissors, Paper.
+  - It starts with the name of the game: Rock, Scissors, Paper.
 
    ![heading]()
 
