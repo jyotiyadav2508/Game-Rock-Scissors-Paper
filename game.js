@@ -1,25 +1,41 @@
 const MAX_ROUNDS = 5;
-let userChoice;
-let computerChoice;
-let clickCount;
-let userScore=0;
-let computerScore=0;
+// let userChoice;
+// let computerChoice;
+let clickCount=0;
+// let userScore=0;
+// let computerScore=0;
 
 /**The complete game logic where user input is parsed, then random computer input is generated and logic is executed to determine the winner */
 
 function onUserSelection(event) {
+    // let clickCount;
     if(clickCount >= MAX_ROUNDS) return;
 
     clickCount = ++clickCount;
-     userChoice = event.currentTarget.id;
-     computerChoice = getComputerChoice();
+    let userChoice = event.currentTarget.id;
+    let computerChoice = getComputerChoice();
 
     renderChoice(true, userChoice);
     renderChoice(false, computerChoice);
 
-    userWon = checkWinner(userChoice, computerChoice);
+    let compareResult = checkResult(userChoice, computerChoice);
+    document.getElementById("compare-result").innerHTML = compareResult;
+    console.log(computerChoice, compareResult, clickCount);
+        // console.log(userScore, computerScore);
+
+
+    let userWon = checkResult(userChoice, computerChoice);
     incrementScore(userWon);
-    renderResult(userWon);
+    displayWinner(userWon);
+
+    if(clickCount === 5){
+        let winnerName = displayWinner();
+        document.getElementById("winner").innerHTML = winnerName;
+        alert("Game Over! Restart again")
+    } 
+
+ 
+
 
     if(clickCount >= MAX_ROUNDS) {
         gameOver();
@@ -32,16 +48,16 @@ function renderChoice(isUser, choice) {
     document.getElementById(choiceElement).innerHTML = `<i class= "fa-solid fa-hand-${choice} fa-2x"></i>`
 }
 
-let compareResult = checkResult();
-document.getElementById("compare-result").innerHTML = compareResult;
-console.log(computerChoice, compareResult, clickCount);
-    console.log(userScore, computerScore);
+// let compareResult = checkResult();
+// document.getElementById("compare-result").innerHTML = compareResult;
+// console.log(computerChoice, compareResult, clickCount);
+    // console.log(userScore, computerScore);
 
-if(clickCount === 5){
-    let winnerName = displayWinner();
-    document.getElementById("winner").innerHTML = winnerName;
-    alert("Game Over! Restart again")
-}    
+// if(clickCount === 5){
+//     let winnerName = displayWinner();
+//     document.getElementById("winner").innerHTML = winnerName;
+//     alert("Game Over! Restart again")
+// }    
 
 function getComputerChoice(){
     let randomNumber = Math.random();
@@ -54,17 +70,17 @@ function getComputerChoice(){
     }
 }
 
-function checkResult() {
+function checkResult(userChoice, computerChoice) {
     if(userChoice === computerChoice){
         return "It's a draw!";
     }else if ((userChoice === "rock" && computerChoice === "paper") || 
              (userChoice === "paper" && computerChoice === "scissors") || 
              (userChoice === "scissors" && computerChoice === "rock")) 
     {
-    increaseComputerScore();
+    incrementScore(false);
     return `Computer Wins! (${computerChoice} beats ${userChoice})`;
 } else {
-  increaseUserScore();
+  incrementScore(true);
   return `User Wins!  (${userChoice} beats ${computerChoice})`;
 } 
 }
@@ -76,7 +92,7 @@ function incrementScore(userWon){
     score = parseInt(document.getElementById(scoreElement).innerHTML);
     document.getElementById(scoreElement).innerHTML = ++score;
 }
-function displayWinner() {
+function displayWinner(userScore, computerScore) {
     if (userScore > computerScore) {
         return "Congratulations ! User Wins...";
     } else if (userScore < computerScore) {
@@ -89,7 +105,7 @@ function displayWinner() {
 } 
 
 function initGame(){
-    let userOptions = document.querySelectorAll(",icon");
+    let userOptions = document.querySelectorAll(".icon");
     userOptions.forEach((icon) => icon.addEventListener("click", onUserSelection));
 }
 document.addEventListener("DOMContentLoaded", initGame);
