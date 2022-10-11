@@ -12,7 +12,7 @@ function getUserChoice(event) {
     userChoice = event.target.id;
     if(clickCount < 5){
     clickCount = ++clickCount;
-    // document.getElementById("user-choice").innerHTML = userChoice;
+    
     document.getElementById("user-choice").innerHTML = `<i class= "fa-solid fa-hand-${userChoice} fa-2x"></i>`;
     computerChoice = getComputerChoice();
     document.getElementById("computer-choice").innerHTML = `<i class= "fa-solid fa-hand-${computerChoice} fa-2x"></i>`;
@@ -20,6 +20,7 @@ function getUserChoice(event) {
     document.getElementById("compare-result").innerHTML = compareResult;
     console.log(userChoice, computerChoice, compareResult, clickCount);
     console.log(userScore, computerScore);}
+    
     if (clickCount === 5) {
         let winnerName = displayWinner();
         document.getElementById("winner").innerHTML = winnerName;

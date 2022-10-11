@@ -1,17 +1,18 @@
 const MAX_ROUNDS = 5;
-let clickCount=0;
+let clickCount = 0;
 
 
 /**The complete game logic where user input is parsed, 
  * then random computer input is generated and 
  * logic is executed to determine the winner.
  * @param event the click event.
-  */
+ */
 
 function onUserSelection(event) {
-    if(clickCount >= MAX_ROUNDS){ 
-    alert("Game Over! Click Restart to play again");
-    return;}
+    if (clickCount >= MAX_ROUNDS) {
+        alert("Game Over! Click Restart to play again");
+        return;
+    }
 
     clickCount = ++clickCount;
     let userChoice = event.currentTarget.id;
@@ -24,50 +25,46 @@ function onUserSelection(event) {
     document.getElementById("compare-result").innerHTML = compareResult;
     console.log(userChoice, computerChoice, clickCount);
 
-    if(clickCount === 5){
+    if (clickCount === 5) {
         let winnerName = displayWinner();
         document.getElementById("winner").innerHTML = winnerName;
-    } 
+    }
 }
+
 function renderChoice(isUser, choice) {
-    let choiceElement = isUser ? "user-choice": "computer-choice";
+    let choiceElement = isUser ? "user-choice" : "computer-choice";
 
     document.getElementById(choiceElement).innerHTML = `<i class= "fa-solid fa-hand-${choice} fa-2x"></i>`
 }
-  
-function getComputerChoice(){
+
+function getComputerChoice() {
     let randomNumber = Math.random();
-    if(randomNumber < 0.33){
+    if (randomNumber < 0.33) {
         return "rock";
-    }else if(randomNumber < 0.66){
+    } else if (randomNumber < 0.66) {
         return "scissors";
-    }else{
+    } else {
         return "paper";
     }
 }
 
-function checkResult(userChoice, computerChoice) 
-{
-    if(userChoice === computerChoice){
+function checkResult(userChoice, computerChoice) {
+    if (userChoice === computerChoice) {
         return "It's a draw!";
-      }
-    else if ((userChoice === "rock" && computerChoice === "paper") || 
-             (userChoice === "paper" && computerChoice === "scissors") || 
-             (userChoice === "scissors" && computerChoice === "rock")) 
-    {
+    } else if ((userChoice === "rock" && computerChoice === "paper") ||
+        (userChoice === "paper" && computerChoice === "scissors") ||
+        (userChoice === "scissors" && computerChoice === "rock")) {
         incrementScore(false);
         return `Computer Wins! (${computerChoice} beats ${userChoice})`;
-    }   
-    else 
-    {
+    } else {
         incrementScore(true);
         return `User Wins!  (${userChoice} beats ${computerChoice})`;
-    } 
+    }
 }
 
-function incrementScore(userWon){
-    if(userWon === undefined) return;
-    
+function incrementScore(userWon) {
+    if (userWon === undefined) return;
+
     let scoreElement = userWon ? "user-score" : "computer-score";
     score = parseInt(document.getElementById(scoreElement).innerHTML);
     document.getElementById(scoreElement).innerHTML = ++score;
@@ -79,15 +76,15 @@ function displayWinner() {
     if (userScore > computerScore) {
         return "Congratulations ! User Wins...";
     } else if (userScore < computerScore) {
-        return "Computer wins the game!";
+        return "Computer Wins the game!";
 
     } else(userScore = computerScore); {
-        return "it's a draw!";
+        return "It's a Draw!";
     }
     style.displayWinner = red;
-} 
+}
 
-function initGame(){
+function initGame() {
     let userOptions = document.querySelectorAll(".icon");
     userOptions.forEach((icon) => icon.addEventListener("click", onUserSelection));
 }
