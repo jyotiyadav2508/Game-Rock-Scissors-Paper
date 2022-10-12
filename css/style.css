@@ -9,7 +9,7 @@
     padding: 10px;
     margin-left:5%;
     font-family: 'Kalam', cursive;
-    color:rgb(89, 62, 11);
+    color:rgb(170, 56, 14);
     text-decoration: underline;
 }
 
@@ -37,10 +37,17 @@ margin:10px;
 #main-page a{
     font-size: 1.5rem;
     text-decoration: none;
-    background: blue;
+    background: rgb(20, 43, 242);
     color: white;
+    border:2px solid black;
     border-radius:10px;
     padding:5px;
+}
+#main-page a:hover{
+    background: rgb(240, 143, 143);
+    border:2px solid black;
+    color:black;
+    
 }
 
 /* Media query for home page */
@@ -68,16 +75,17 @@ margin:10px;
     }
 }
 #game-page{
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-    /* background:#f69d3c; */
+    /* background: linear-gradient(00.25turn, #3f87a6, #ebf8e1, #f69d3c); */
+    background:#f5c592;
+    /* color: rgb(240, 79, 79); */
 }
 
 #game-area{
-    height:680px;
+    height:700px;
     width:660px;
-    /* background-color: #cde6bb; */
+    background-color:#b5ddf1;
     /* background:linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
-    background: transparent;
+    /* background: transparent; */
     margin:25px auto auto auto;
     text-align: center;
     border: 2px solid red;
@@ -88,7 +96,7 @@ margin:10px;
 
 }
 #heading h1{
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     padding:10px;
 }
 #game-area h2{
@@ -107,6 +115,11 @@ margin:10px;
     cursor: pointer;
     background: transparent;
     width:70px;
+    /* background:rgb(243, 161, 161); */
+    background-color: #4daedf;
+}
+.user-options .icon:hover{
+    background:rgb(164, 136, 136);
 }
 
 #user-computer-choice {
@@ -125,7 +138,6 @@ margin:10px;
 #mid h2 {
     margin-top: 10%;
     font-size: 2.7rem;
-    /* border: 1px solid red; */
     padding: 10px;
 }
 
@@ -143,12 +155,12 @@ margin:10px;
     cursor: pointer;
     border:2px solid black;
     border-radius: 10px;
-    background: transparent;
+    background-color: #3dafe9;
     margin: 10px 20px;
 
 }
 #btn:hover{
-    background-color: rgb(224, 105, 105);
+    background-color: rgb(164, 136, 136);
 }
 #btn a{
     text-decoration: none;
