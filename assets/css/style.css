@@ -91,7 +91,6 @@ margin:10px;
     border: 2px solid red;
 }
 #heading{
-    /* border-bottom: 1.3px solid red; */
     text-decoration: underline;
 
 }
@@ -128,6 +127,8 @@ margin:10px;
     border-top: 1px solid red;
     border-bottom: 1px solid red;
     padding: 15px;
+    /* height:150px; */
+    /* background-color: #f69d3c; */
    }
    input {
     height: 40px;
