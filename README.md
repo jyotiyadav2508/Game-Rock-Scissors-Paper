@@ -39,7 +39,7 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
   - Featured at the top-left corner of the page, the header shows the logo of the website.
 
-  ![logo]()
+  ![logo](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/logo.png)
 
 - __Heading and Image__
 
@@ -47,51 +47,54 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
   - The image shows the name of all three icons, with which we are going to play the game and also describes the rules of the game "Rock, scissors, Paper".
   - This game is played between user and computer.
 
-   ![Image of Home page ]()
+   ![Image of Home page ](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/heading-image.png)
 
 - __Nav Button__ 
 
   - Featured at the end of the page is the Start-Game Button, which allows the user to easily navigate to the game page.  
 
-   ![Start button]()
+   ![Start button](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/nav-button.png)
 
 - __The Game Section__  
 
   - It starts with the name of the game: Rock, Scissors, Paper.
 
-   ![heading]()
+   ![heading](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/game-heading.png)
 
 - __The Game Options__  
 
   - The Game options section includes the following:
-    - clear instructions,
+    - clear instruction,
     - choice of options to choose from
     - these options are intractive icons that the user can click to make their choice and play the game.
 
-   ![ Game Options]()
+   ![ Game Options](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/user-options.png)
 
  - __Choice Display Section__ 
 
    - When user clicks an option, the image relating to their choice is shown on the user-choice area.
    - The Java Script code chooses a random option for the computer player and displays the image relating to computer's choice on computer-choice  area.
 
-    ![Choice display]() 
+    ![Choice display](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/display-choice.png) 
 
  - __The game Result__ 
 
    - After each user attempt, Java Script generates computer choice randomly and determines and displays its result. 
    - The score is updated for either the user or the computer, depending on who wins.
-   - After 5 attempts, game winner is announced and an alert is generated.
-   - After game over alert, user can restart the game by clicking the restart button.
+   - After 5 attempts, game winner is announced.
+   - After game over, user can either restart the game by clicking the restart button or exit the game page by clicking exit button. The Exit button navigate to home page.
 
-   ![Result display]() 
+   ![Result display](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/result.png) 
 
+   ![Display Winner](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/game-winner.png)
 
-### Features left to implement
+ - __Restart and Exit button__
 
-  - Add the game rules either in details tag or in the footer, which user can see in game page.
-  - Add an Exit button which navigate to the home page.
-  - When there is time, I would like to expand my website by adding a Quiz.
+  - After the game is over or in the middle of the game, the user can restart the game by clicking restart button.
+  - Exit button navigates the user to the home page. 
+
+   ![Buttons](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/restart-exit-buttons.png)
+
 
 ## Testing  
 
@@ -119,4 +122,4 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 ## Credits 
 
   - The icons in game area were taken from https://fontawesome.com/icons.
-  - The image used on home page was taken from google search result.
+  - The image used on home page was taken from https://favpng.com.
