@@ -1,5 +1,6 @@
 const MAX_ROUNDS = 5;
 let clickCount = 0;
+let count = MAX_ROUNDS;
 
 
 /**The complete game logic where user input is parsed, 
@@ -26,9 +27,10 @@ function onUserSelection(event) {
     document.getElementById("compare-result").innerHTML = compareResult;
     console.log(userChoice, computerChoice, clickCount);
 
-    let count = theCounter()
-    // document.getElementById("attempt-left").innerHTML = count;
-    // console.log(count);
+    // let count = theCounter()
+    count = --count ;
+    document.getElementById("attempt-left").innerHTML = count;
+    console.log(count);
 
     if (clickCount === 5) {
         let winnerName = displayWinner();
@@ -88,14 +90,14 @@ function displayWinner() {
     }
     style.displayWinner = red;
 }
-let count = 5;
-function theCounter(){
-     count = --count ;
-    // document.getElementById("attempt-left").innerHTML = "Remaining Attempts : ".count;
-    document.getElementById("attempt-left").innerHTML = count;
-    console.log(count);
+
+// function theCounter(){
+//      count = --count ;
+//     // document.getElementById("attempt-left").innerHTML = "Remaining Attempts : ".count;
+//     document.getElementById("attempt-left").innerHTML = count;
+//     console.log(count);
    
-}
+// }
 
 function initGame() {
     let userOptions = document.querySelectorAll(".icon");

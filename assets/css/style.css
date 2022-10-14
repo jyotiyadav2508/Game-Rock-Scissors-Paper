@@ -83,27 +83,28 @@ margin:10px;
 #game-area{
     height:700px;
     width:660px;
-    background-color:#b5ddf1;
+    /* background-color:#b5ddf1; */
     /* background:linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
-    /* background: transparent; */
+    background: transparent;
     margin:25px auto auto auto;
     text-align: center;
-    border: 2px solid red;
+    /* padding:20px; */
+    /* border: 2px solid red; */
 }
-#heading{
-    text-decoration: underline;
 
-}
 #heading h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding:10px;
+    text-shadow: 2px 2px 5px red;
+    font-style: oblique;
 }
 #game-area h2{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding:5px;
 }
 .user-options p {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    background:#4daedf;
 }
 
 .user-options .icon {
@@ -121,14 +122,32 @@ margin:10px;
     background:rgb(164, 136, 136);
 }
 
-#user-computer-choice {
-    display: flex;
+#choice-display{
+    /* display: flex;
     justify-content: space-between;
     border-top: 1px solid red;
     border-bottom: 1px solid red;
-    padding: 15px;
-    /* height:150px; */
+    padding: 15px; */
+    height:300px;
+    border:2px solid red;
     /* background-color: #f69d3c; */
+   }
+   #user-computer-choice{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height:150px;
+   }
+   #user-computer-choice #left, #right{
+    border:2px solid green;
+    margin:10px;
+    background: #ebf8e1;
+   }
+   .score{
+    display:flex;
+    justify-content: space-around;
+    /* background-color:#214f63; */
+    height:40px; 
+    padding:10px;
    }
    input {
     height: 40px;
@@ -136,22 +155,22 @@ margin:10px;
     font-size: 1rem;
 }
 
-#mid h2 {
-    margin-top: 10%;
-    font-size: 2.7rem;
-    padding: 10px;
-}
+
 
 #result {
     padding: 15px;
     text-align: left;
     
 }
+#game-winner{
+    text-align: left;
+    border:2px solid #cde0be;
+}
 #winner{
     color:red;
 }
 #btn{
-    font-size:1.5rem;
+    font-size:1.3rem;
     padding:3px;
     cursor: pointer;
     border:2px solid black;

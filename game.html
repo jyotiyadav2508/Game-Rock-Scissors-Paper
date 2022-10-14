@@ -14,33 +14,39 @@
             <h1>Rock, Scissors, Paper</h1>
         </header>
         <section class="user-options">
+            <div><p>Attempts Left :  <span id="attempt-left" style="color:aquamarine">  5 </span></p>
+            </div>
+            <div>
             <h2>Make Your Selection:</h2>
-            <p>Click any of these symbol below</p>
             <i id="rock" class="icon fa-solid fa-hand-back-fist fa-3x"><p>Rock</p></i>    
             <i id="scissors" class="icon fa-solid fa-hand-scissors fa-3x"><p>Scissors</p></i>
             <i id="paper" class="icon fa-solid fa-hand fa-3x"><p>Paper</p></i>
-            <h2>Attempts Left :  <span id="attempt-left">  5 </span></h2>
+        </div>
         </section>
-        <section id="user-computer-choice">
+        <section id="choice-display">
+            <div class="score">
+                <h2>User Score:  <span id="user-score">0</span></h2>
+                <h2>Computer Score:  <span id="computer-score">0</span></h2>
+            </div>
+            <div id="user-computer-choice">
             <div id="left">
-                <h2>User-Choice: <br><span id="user-choice"></span></h2>
-            </div>
-            <div id="mid">
-                <h2>Vs</h2>
-            </div>
+                <h2>User-Choice: <br><br><span id="user-choice"></span></h2></div>
+            
             <div id="right">
-                <h2>Computer-Choice:<br>
-                <span id="computer-choice"></span></h2>
-            </div>
-        </section>
-        <section id="result">
+                <h2>Computer-Choice:<br><br>
+                <span id="computer-choice"></span></h2></div>
+            
+        </div>
+        <div id="result">
             <h2> Result : <span id="compare-result"></span></h2>
-            <h2>User Score:  <span id="user-score">0</span></h2>
-            <h2>Computer Score:  <span id="computer-score">0</span></h2>
+        </div>
+        </section>
+        <section id="game-winner">
+            
             <h2>Game Winner :<span id="winner"></span></h2>
         </section>
         <button id="btn" onclick="location.reload()">Restart</button>
-        <button id="btn"><a href="index.html">Go to Home page</a></button>
+        <button id="btn"><a href="index.html">Exit</a></button>
     
     </div>
     
