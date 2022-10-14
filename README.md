@@ -90,8 +90,8 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
  - __Restart and Exit button__
 
-  - After the game is over or in the middle of the game, the user can restart the game by clicking restart button.
-  - Exit button navigates the user to the home page. 
+   - After the game is over or in the middle of the game, the user can restart the game by clicking restart button.
+   - Exit button navigates the user to the home page. 
 
    ![Buttons](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/restart-exit-buttons.png)
 
