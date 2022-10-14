@@ -1,6 +1,6 @@
 const MAX_ROUNDS = 5;
 let clickCount = 0;
-let count = MAX_ROUNDS;
+var count = MAX_ROUNDS;
 
 
 /**The complete game logic where user input is parsed, 
@@ -12,7 +12,6 @@ let count = MAX_ROUNDS;
 function onUserSelection(event) {
     
     if (clickCount >= MAX_ROUNDS) {
-        alert("Game Over! Click Restart to play again");
         return;
     }
 
@@ -27,10 +26,9 @@ function onUserSelection(event) {
     document.getElementById("compare-result").innerHTML = compareResult;
     console.log(userChoice, computerChoice, clickCount);
 
-    // let count = theCounter()
     count = --count ;
     document.getElementById("attempt-left").innerHTML = count;
-    console.log(count);
+
 
     if (clickCount === 5) {
         let winnerName = displayWinner();
@@ -58,12 +56,14 @@ function getComputerChoice() {
 function checkResult(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
         return "It's a draw!";
+
     } else if ((userChoice === "rock" && computerChoice === "paper") ||
         (userChoice === "paper" && computerChoice === "scissors") ||
         (userChoice === "scissors" && computerChoice === "rock")) {
         incrementScore(false);
         return `Computer Wins! (${computerChoice} beats ${userChoice})`;
     } else {
+
         incrementScore(true);
         return `User Wins!  (${userChoice} beats ${computerChoice})`;
     }
@@ -88,16 +88,7 @@ function displayWinner() {
     } else(userScore = computerScore); {
         return "It's a Draw!";
     }
-    style.displayWinner = red;
 }
-
-// function theCounter(){
-//      count = --count ;
-//     // document.getElementById("attempt-left").innerHTML = "Remaining Attempts : ".count;
-//     document.getElementById("attempt-left").innerHTML = count;
-//     console.log(count);
-   
-// }
 
 function initGame() {
     let userOptions = document.querySelectorAll(".icon");

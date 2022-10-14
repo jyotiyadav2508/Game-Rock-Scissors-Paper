@@ -1,188 +1,195 @@
-*{
-    margin:0;
-    padding:0;
-    /* font-family: 'Noto Sans', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Kalam', cursive;
-} 
-#logo{
+}
+
+#logo {
     font-size: 2rem;
     padding: 10px;
-    margin-left:5%;
-    font-family: 'Kalam', cursive;
-    color:rgb(170, 56, 14);
+    margin-left: 5%;
+    color: rgb(170, 56, 14);
+    text-decoration: underline;
+    text-shadow: 2px 2px goldenrod;
+    text-align: left;
+}
+
+body {
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    text-align: center;
+}
+
+#main-page img {
+    width: 30%;
+    height: 50vh;
+    margin-top: 10px;
+}
+
+#main-page h1 {
+    font-size: 2.5rem;
     text-decoration: underline;
 }
 
-body{
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-    
-}
-#main-page img{
-    width: 30%;
-    height: 50vh;
-    margin-top:10px;
-}
-#main-page{
-    text-align: center;
-}
-#main-page h1{
-font-size: 2.5rem;
-text-decoration: underline;
-}
-#main-page p{
-font-size: 2rem;
-margin:10px;
+#main-page p {
+    font-size: 2rem;
+    margin: 10px;
 }
 
-#main-page a{
+#main-page a {
     font-size: 1.5rem;
     text-decoration: none;
-    background: rgb(20, 43, 242);
+    background: rgb(32, 49, 196);
     color: white;
-    border:2px solid black;
-    border-radius:10px;
-    padding:5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
 }
-#main-page a:hover{
+
+#main-page a:hover {
     background: rgb(240, 143, 143);
-    border:2px solid black;
-    color:black;
-    
+    border: 2px solid black;
+    color: black;
 }
 
 /* Media query for home page */
 
-@media screen and (max-width:785px){
-    #main-page img{
-        width:50%;
-        height:50vh ;
-    
-} }
+@media screen and (max-width:785px) {
+    #main-page img {
+        width: 50%;
+        height: 50vh;
+    }
+}
+
 @media screen and (max-width:450px) {
-    #main-page img{
-        width:65%;
-        height:35vh ;
+    #main-page img {
+        width: 65%;
+        height: 35vh;
     }
-    #main-page h1{
-        font-size: 2.1rem;
+
+    #main-page h1 {
+        font-size: 2rem;
     }
-    #main-page p{
-        font-size: 1.8rem;
+
+    #main-page p {
+        font-size: 1.6rem;
     }
-    #logo{
-        font-size: 1.5rem;
+
+    #logo {
+        font-size: 1.3rem;
         margin-left: 5px;
     }
 }
-#game-page{
-    /* background: linear-gradient(00.25turn, #3f87a6, #ebf8e1, #f69d3c); */
-    background:#f5c592;
-    /* color: rgb(240, 79, 79); */
+
+#game-page {
+    background: #f3d3b0;
 }
 
-#game-area{
-    height:700px;
-    width:660px;
-    /* background-color:#b5ddf1; */
-    /* background:linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
-    background: transparent;
-    margin:25px auto auto auto;
+#game-area {
+    height: 700px;
+    width: 660px;
+    margin: 5px auto auto auto;
     text-align: center;
-    /* padding:20px; */
-    /* border: 2px solid red; */
+    padding: 20px;
 }
 
-#heading h1{
-    font-size: 2rem;
-    padding:10px;
+#heading h1 {
+    font-size: 2.2rem;
+    padding: 10px;
     text-shadow: 2px 2px 5px red;
     font-style: oblique;
-}
-#game-area h2{
-    font-size: 1.3rem;
-    padding:5px;
-}
-.user-options p {
-    font-size: 1.3rem;
-    background:#4daedf;
+
 }
 
-.user-options .icon {
-    border: 1.5px solid black;
-    border-radius: 30%;
-    padding: 8px;
-    margin: 20px 30px;
-    cursor: pointer;
-    background: transparent;
-    width:70px;
-    /* background:rgb(243, 161, 161); */
-    background-color: #4daedf;
-}
-.user-options .icon:hover{
-    background:rgb(164, 136, 136);
+#game-area h2 {
+    font-size: 1.3rem;
+    padding: 5px;
 }
 
-#choice-display{
-    /* display: flex;
-    justify-content: space-between;
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
-    padding: 15px; */
-    height:300px;
-    border:2px solid red;
-    /* background-color: #f69d3c; */
-   }
-   #user-computer-choice{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height:150px;
-   }
-   #user-computer-choice #left, #right{
-    border:2px solid green;
-    margin:10px;
-    background: #ebf8e1;
-   }
-   .score{
-    display:flex;
-    justify-content: space-around;
-    /* background-color:#214f63; */
-    height:40px; 
-    padding:10px;
-   }
-   input {
-    height: 40px;
-    background: transparent;
+#user-options p {
     font-size: 1rem;
 }
 
+#user-clicks {
+    background: #7ccbf2;
+}
 
+#user-options {
+    background: #ebf8e1;
+    border: 2px solid green;
+    margin-top: 15px;
+}
 
-#result {
-    padding: 15px;
-    text-align: left;
-    
-}
-#game-winner{
-    text-align: left;
-    border:2px solid #cde0be;
-}
-#winner{
-    color:red;
-}
-#btn{
-    font-size:1.3rem;
-    padding:3px;
+#user-options .icon {
+    border: 1.5px solid black;
+    border-radius: 40%;
+    padding: 8px;
+    margin: 15px 20px;
     cursor: pointer;
-    border:2px solid black;
-    border-radius: 10px;
-    background-color: #3dafe9;
-    margin: 10px 20px;
-
+    width: 70px;
+    background-color: #bee6fa;
 }
-#btn:hover{
+
+#user-options .icon:hover {
+    background: rgb(164, 136, 136);
+}
+
+#choice-score-display {
+    height: 270px;
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+}
+
+#user-computer-choice {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 160px;
+}
+
+#user-computer-choice .choice-display {
+    border: 2px solid green;
+    margin: 10px;
+    background: #ebf8e1;
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+}
+
+#user-score,
+#computer-score,
+#attempt-left {
+    color: red;
+}
+
+#game-winner {
+    background: #7ccbf2;
+    border: 2px solid green;
+    height: 70px;
+}
+
+#winner {
+    color: red;
+    font-size: 2rem;
+    text-shadow: 2px 2px green;
+}
+
+#btn {
+    font-size: 1.3rem;
+    padding: 3px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #bee6fa;
+    margin: 30px;
+}
+
+#btn:hover {
     background-color: rgb(164, 136, 136);
 }
-#btn a{
+
+#btn a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
