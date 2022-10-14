@@ -9,6 +9,7 @@ let clickCount = 0;
  */
 
 function onUserSelection(event) {
+    
     if (clickCount >= MAX_ROUNDS) {
         alert("Game Over! Click Restart to play again");
         return;
@@ -24,6 +25,10 @@ function onUserSelection(event) {
     let compareResult = checkResult(userChoice, computerChoice);
     document.getElementById("compare-result").innerHTML = compareResult;
     console.log(userChoice, computerChoice, clickCount);
+
+    let count = theCounter()
+    // document.getElementById("attempt-left").innerHTML = count;
+    // console.log(count);
 
     if (clickCount === 5) {
         let winnerName = displayWinner();
@@ -82,6 +87,14 @@ function displayWinner() {
         return "It's a Draw!";
     }
     style.displayWinner = red;
+}
+let count = 5;
+function theCounter(){
+     count = --count ;
+    // document.getElementById("attempt-left").innerHTML = "Remaining Attempts : ".count;
+    document.getElementById("attempt-left").innerHTML = count;
+    console.log(count);
+   
 }
 
 function initGame() {
