@@ -66,7 +66,7 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
   - It shows the number of selections currently available.
 
    ![Selections Left]()
-   
+
 - __The Game Options__  
 
   - The Game options section includes the following:
@@ -83,12 +83,12 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
     ![Choice display](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/display-choice.png) 
 
- - __The game Result__ 
+ - __The Result__ 
 
-   - After each user attempt, Java Script generates computer choice randomly and determines and displays its result. 
-   - The score is updated for either the user or the computer, depending on who wins.
-   - After 5 attempts, game winner is announced.
-   - After game over, user can either restart the game by clicking the restart button or exit the game page by clicking exit button. The Exit button navigate to home page.
+   - After each user selection, Java Script generates computer choice randomly and determines and displays its specific selection result. 
+   - The score is updated for either the user or the computer, depending on the selection result.
+   - After 5 selections, game winner is announced.
+   - Once the game is over, user can either restart the game by clicking the restart button or exit the game page by clicking exit button. The Exit button navigates the user to home page.
 
    ![Result display](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/result.png) 
 
@@ -104,8 +104,19 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
 ## Testing  
 
-### Validator Testing 
+### Validator Testing
 
+ - __HTML__
+
+   - No error was returned when passing through the official for index.html.[W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fjyotiyadav2508.github.io%2FGame-Rock-Scissors-Paper-%2Findex.html)
+   - No error was returned when passing through the official for game.html. [W3C validator]()
+ - __CSS__
+ 
+   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjyotiyadav2508.github.io%2FGame-Rock-Scissors-Paper-%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+ - __JavaScript__
+
+  [JSHint JavaScript Validator]()  
 
 ## Bugs
 

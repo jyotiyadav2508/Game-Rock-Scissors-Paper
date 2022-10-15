@@ -74,7 +74,7 @@ function incrementScore(userWon) {
     if (userWon === undefined) return;
 
     let scoreElement = userWon ? "user-score" : "computer-score";
-    score = parseInt(document.getElementById(scoreElement).innerHTML);
+    let score = parseInt(document.getElementById(scoreElement).innerHTML);
     document.getElementById(scoreElement).innerHTML = ++score;
 }
 
