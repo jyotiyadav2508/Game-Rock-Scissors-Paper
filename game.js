@@ -29,8 +29,7 @@ function onUserSelection(event) {
 
     count = --count ;
    
-    document.getElementById("user-clicks").innerHTML ="Clicks Left: " + count;
-    document.getElementById("user-clicks").style.fontSize ="1.7rem ";
+    document.getElementById("selections-left").innerHTML = count;
 
     if (clickCount === 5) {
         let winnerName = displayWinner();

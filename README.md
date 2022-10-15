@@ -61,6 +61,12 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
    ![heading](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/game-heading.png)
 
+- __Available Selections__
+
+  - It shows the number of selections currently available.
+
+   ![Selections Left]()
+   
 - __The Game Options__  
 
   - The Game options section includes the following:

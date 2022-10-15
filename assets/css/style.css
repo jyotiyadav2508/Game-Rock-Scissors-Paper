@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* font-family: 'Kalam', cursive; */
+    font-family: 'Kalam', cursive;
 }
 
 #logo {
@@ -81,41 +81,42 @@ body {
 }
 
 #game-page {
-    background: #f3d3b0;
+    background: rgb(192, 241, 241);
 }
 
 #game-area {
-    height: 700px;
+    height: 690px;
     width: 660px;
-    margin: 5px auto auto auto;
+    margin: 2px auto auto auto;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    border :#1e4f67 1px solid ;
 }
 
 #heading h1 {
     font-size: 2.2rem;
-    padding: 10px;
     text-shadow: 2px 2px 5px red;
     font-style: oblique;
 
 }
 
 #game-area h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 5px;
 }
 
 #user-options p {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 #user-clicks {
     background: #7ccbf2;
+    border-bottom: 2px solid #1e4f67;
 }
 
-#user-options {
-    background: #ebf8e1;
-    border: 2px solid green;
+#user-options{
+    border: 2px solid red;
     margin-top: 15px;
 }
 
@@ -126,7 +127,6 @@ body {
     margin: 15px 20px;
     cursor: pointer;
     width: 70px;
-    background-color: #bee6fa;
 }
 
 #user-options .icon:hover {
@@ -134,39 +134,48 @@ body {
 }
 
 #choice-score-display {
-    height: 270px;
-    border-left: 2px solid green;
-    border-right: 2px solid green;
+    height: 260px;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
 }
 
 #user-computer-choice {
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 160px;
+    height: 170px;
 }
 
 #user-computer-choice .choice-display {
-    border: 2px solid green;
-    margin: 10px;
-    background: #ebf8e1;
+    border: 1px solid  #1e4f67;
+    margin: 30px;
+    border-radius: 30px;
+    border-bottom: 2px solid #1e4f67;
 }
 
 .score {
-    display: flex;
-    justify-content: space-around;
     height: 40px;
+    border-bottom: 2px solid #1e4f67;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: #7ccbf2;
+    
 }
 
 #user-score,
 #computer-score,
-#attempt-left {
+#selections-left {
     color: red;
+}
+#result{
+    background: #7ccbf2;
+    border-top: 2px solid #1e4f67;
+    height:50px;
 }
 
 #game-winner {
     background: #7ccbf2;
-    border: 2px solid green;
-    height: 70px;
+    border: 2px solid red;
+    height:80px;
 }
 
 #winner {
