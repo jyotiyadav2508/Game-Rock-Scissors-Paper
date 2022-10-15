@@ -12,7 +12,8 @@ var count = MAX_ROUNDS;
 function onUserSelection(event) {
     
     if (clickCount >= MAX_ROUNDS) {
-        return;
+            return;
+
     }
 
     clickCount = ++clickCount;
@@ -27,8 +28,9 @@ function onUserSelection(event) {
     console.log(userChoice, computerChoice, clickCount);
 
     count = --count ;
-    document.getElementById("attempt-left").innerHTML = count;
-
+   
+    document.getElementById("user-clicks").innerHTML ="Clicks Left: " + count;
+    document.getElementById("user-clicks").style.fontSize ="1.7rem ";
 
     if (clickCount === 5) {
         let winnerName = displayWinner();
