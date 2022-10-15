@@ -1,5 +1,5 @@
 # Fun Club
-The live link can be found here - https://jyotiyadav2508.github.io/Game-Rock-Scissors-Paper-/
+The live link can be found here - https://jyotiyadav2508.github.io/Game-Rock-Scissors-Paper/
 
 Fun Club website provides a game "Rock-Scissors-Paper". This site is targeted towards adults and children to have fun time, reduces stress, to have a little break during work and study. It is not always possible to play with friends; therefore, this game provides Computer as your opponent. The computer chooses its options randomly, therefore game gives you a fair result. User of this game will learn the rules of Rock, Scissors, Paper which they can apply in decision making with others in their lives.
 
@@ -39,7 +39,7 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
   - Featured at the top-left corner of the page, the header shows the logo of the website.
 
-  ![logo](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/logo.png)
+  ![logo](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/logo.png)
 
 - __Heading and Image__
 
@@ -47,19 +47,19 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
   - The image shows the name of all three icons, with which we are going to play the game and also describes the rules of the game "Rock, scissors, Paper".
   - This game is played between user and computer.
 
-   ![Image of Home page ](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/heading-image.png)
+   ![Image of Home page ](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/heading-image.png)
 
 - __Nav Button__ 
 
   - Featured at the end of the page is the Start-Game Button, which allows the user to easily navigate to the game page.  
 
-   ![Start button](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/nav-button.png)
+   ![Start button](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/nav-button.png)
 
 - __The Game Section__  
 
   - It starts with the name of the game: Rock, Scissors, Paper.
 
-   ![heading](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/game-heading.png)
+   ![heading](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/game-heading.png)
 
 - __Available Selections__
 
@@ -74,14 +74,14 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
     - choice of options to choose from
     - these options are intractive icons that the user can click to make their choice and play the game.
 
-   ![ Game Options](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/user-options.png)
+   ![ Game Options](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/user-options.png)
 
  - __Choice Display Section__ 
 
    - When user clicks an option, the image relating to their choice is shown on the user-choice area.
    - The Java Script code chooses a random option for the computer player and displays the image relating to computer's choice on computer-choice  area.
 
-    ![Choice display](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/display-choice.png) 
+    ![Choice display](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/display-choice.png) 
 
  - __The Result__ 
 
@@ -90,16 +90,16 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
    - After 5 selections, game winner is announced.
    - Once the game is over, user can either restart the game by clicking the restart button or exit the game page by clicking exit button. The Exit button navigates the user to home page.
 
-   ![Result display](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/result.png) 
+   ![Result display](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/result.png) 
 
-   ![Display Winner](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/game-winner.png)
+   ![Display Winner](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/game-winner.png)
 
  - __Restart and Exit button__
 
    - After the game is over or in the middle of the game, the user can restart the game by clicking restart button.
    - Exit button navigates the user to the home page. 
 
-   ![Buttons](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper-/blob/main/screenshots/restart-exit-buttons.png)
+   ![Buttons](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/restart-exit-buttons.png)
 
 
 ## Testing  
@@ -108,12 +108,12 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
  - __HTML__
 
-   - No error was returned when passing through the official for index.html [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fjyotiyadav2508.github.io%2FGame-Rock-Scissors-Paper-%2Findex.html)
-   - No error was returned when passing through the official for game.html [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjyotiyadav2508.github.io%2FGame-Rock-Scissors-Paper-%2Fgame.html)
+   - No error was returned when passing through the official for index.html [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fjyotiyadav2508.github.io%2FGame-Rock-Scissors-Paper%2Findex.html)
+   - No error was returned when passing through the official for game.html [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjyotiyadav2508.github.io%2FGame-Rock-Scissors-Paper%2Fgame.html)
 
  - __CSS__
  
-   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjyotiyadav2508.github.io%2FGame-Rock-Scissors-Paper-%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjyotiyadav2508.github.io%2FGame-Rock-Scissors-Paper%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
  - __JavaScript__
 
@@ -146,7 +146,7 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
   - From the side menu, select pages under Code and automation, select the main Branch, then click to save button.
   - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-  The live link can be found here - https://jyotiyadav2508.github.io/Game-Rock-Scissors-Paper-/
+  The live link can be found here - https://jyotiyadav2508.github.io/Game-Rock-Scissors-Paper/
 
 ## Credits 
 
