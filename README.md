@@ -122,10 +122,12 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
 ### Fixed bugs
 
+  - User Choice was not working while clicking on the text instead of icon. It is fixed by replacing "event.Target.id;" with "event.currentTarget.id;".
+  
 ### Unfixed bugs
 
-  - Alert message is shown before displaying the increased score from last click and the game winner.
-  - User Choice is not working while clicking on the text instead of icon.
+  - Error in game.html for P tag in i tag, and href as decendent of button.
+  
 
 ## Deployment
 
