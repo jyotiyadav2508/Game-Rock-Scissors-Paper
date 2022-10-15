@@ -43,7 +43,7 @@ function renderChoice(isUser, choice) {
     let choiceElement = isUser ? "user-choice" : "computer-choice";
 
     document.getElementById(choiceElement).innerHTML =
-     `<i class= "fa-solid fa-hand-${choice} fa-2x"></i>`
+     `<i class= "fa-solid fa-hand-${choice} fa-2x"></i>`;
 }
 //Generate computer's random choice
 

@@ -108,25 +108,35 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
  - __HTML__
 
-   - No error was returned when passing through the official for index.html.[W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fjyotiyadav2508.github.io%2FGame-Rock-Scissors-Paper-%2Findex.html)
-   - No error was returned when passing through the official for game.html. [W3C validator]()
+   - No error was returned when passing through the official for index.html [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fjyotiyadav2508.github.io%2FGame-Rock-Scissors-Paper-%2Findex.html)
+   - No error was returned when passing through the official for game.html [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjyotiyadav2508.github.io%2FGame-Rock-Scissors-Paper-%2Fgame.html)
+
  - __CSS__
  
    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjyotiyadav2508.github.io%2FGame-Rock-Scissors-Paper-%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
  - __JavaScript__
 
-  [JSHint JavaScript Validator]()  
+   - No errors were found when passing through the official Jshint validator [JSHint Validator](https://jshint.com/) 
+     - The following metrics were returned:
+     - There are 8 functions in this file.
+     - Function with the largest signature takes 2 arguments, while the median is 1.
+     - Largest function has 12 statements in it, while the median is 4.5.
+     - The most complex function has a cyclomatic complexity value of 8 while the median is 3.
 
 ## Bugs
 
 ### Fixed bugs
 
   - User Choice was not working while clicking on the text instead of icon. It is fixed by replacing "event.Target.id;" with "event.currentTarget.id;".
-  
+  - While checking game.html with W3C validator,following errors were shown :
+    - "Element p is not allowed as child of element i" for user choice icons - Fix by replacing p element by span element.
+    -  The element a must not appear as descendent of button element - Fix by removing button element and giving a class name in a tag.
+ 
+
 ### Unfixed bugs
 
-  - Error in game.html for P tag in i tag, and href as decendent of button.
+  
   
 
 ## Deployment

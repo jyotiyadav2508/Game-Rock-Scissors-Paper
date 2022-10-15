@@ -84,10 +84,7 @@ body {
     #user-options .icon{
         margin :15px;
         width:40px;
-        display: inline-block;
-    }
-    #user-computer-choice {
-        display:block;
+        display:inline-block;
     }
 }
 
@@ -96,7 +93,7 @@ body {
 }
 
 #game-area {
-    height: 680px;
+    height: 690px;
     width: 660px;
     margin: 2px auto auto auto;
     text-align: center;
@@ -130,14 +127,17 @@ body {
     border: 2px solid red;
     margin-top: 15px;
 }
+#user-options span{
+    font-size: 1.2rem;
+}
 
 #user-options .icon {
     border: 1.5px solid black;
-    border-radius: 40%;
+    border-radius: 30%;
     padding: 8px;
-    margin: 15px 20px;
+    margin: 5px 20px 10px 20px;
     cursor: pointer;
-    width: 70px;
+    width: 72px;
     
 }
 #user-options .icon:hover {
