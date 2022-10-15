@@ -109,7 +109,7 @@ function displayWinner() {
     }
     document.getElementById("winner").innerHTML = winText;
 }
-// get the icon elements and add event listner to them
+// Get the icon elements and add event listner to them
 function initGame() {
     let userOptions = document.querySelectorAll(".icon");
     userOptions.forEach((icon) => icon.addEventListener("click", onUserSelection));
