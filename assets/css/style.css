@@ -10,7 +10,7 @@
     margin-left: 5%;
     color: rgb(170, 56, 14);
     text-decoration: underline;
-    text-shadow: 2px 2px goldenrod;
+    text-shadow: 2px 1px goldenrod;
     text-align: left;
 }
 
@@ -127,6 +127,7 @@ body {
     margin: 15px 20px;
     cursor: pointer;
     width: 70px;
+    
 }
 
 #user-options .icon:hover {
@@ -184,7 +185,7 @@ body {
     text-shadow: 2px 2px green;
 }
 
-#btn {
+.btn{
     font-size: 1.3rem;
     padding: 3px;
     cursor: pointer;
@@ -194,11 +195,11 @@ body {
     margin: 30px;
 }
 
-#btn:hover {
+.btn:hover {
     background-color: rgb(164, 136, 136);
 }
 
-#btn a {
+.btn a {
     text-decoration: none;
     color: black;
 }

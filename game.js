@@ -1,9 +1,13 @@
+/**
+ * Total number of selections per game.
+ */
 const MAX_ROUNDS = 5;
+/**
+ * The current count of how many times user makes a move.
+ */
 let clickCount = 0;
-var count = MAX_ROUNDS;
-
-
-/**The complete game logic where user input is parsed, 
+/**
+ * The complete game logic where user input is parsed, 
  * then random computer input is generated and 
  * logic is executed to determine the winner.
  * @param event the click event.
@@ -16,7 +20,7 @@ function onUserSelection(event) {
 
     }
 
-    clickCount = ++clickCount;
+    ++clickCount;
     let userChoice = event.currentTarget.id;
     let computerChoice = getComputerChoice();
 
@@ -25,22 +29,21 @@ function onUserSelection(event) {
 
     let compareResult = checkResult(userChoice, computerChoice);
     document.getElementById("compare-result").innerHTML = compareResult;
-    console.log(userChoice, computerChoice, clickCount);
 
-    count = --count ;
    
-    document.getElementById("selections-left").innerHTML = count;
+    document.getElementById("selections-left").innerHTML = MAX_ROUNDS - clickCount;
 
-    if (clickCount === 5) {
-        let winnerName = displayWinner();
-        document.getElementById("winner").innerHTML = winnerName;
+    if (clickCount === MAX_ROUNDS) {
+    displayWinner();
+        
     }
 }
 
 function renderChoice(isUser, choice) {
     let choiceElement = isUser ? "user-choice" : "computer-choice";
 
-    document.getElementById(choiceElement).innerHTML = `<i class= "fa-solid fa-hand-${choice} fa-2x"></i>`
+    document.getElementById(choiceElement).innerHTML =
+     `<i class= "fa-solid fa-hand-${choice} fa-2x"></i>`
 }
 
 function getComputerChoice() {
@@ -81,14 +84,17 @@ function incrementScore(userWon) {
 function displayWinner() {
     let userScore = parseInt(document.getElementById("user-score").innerHTML);
     let computerScore = parseInt(document.getElementById("computer-score").innerHTML);
-    if (userScore > computerScore) {
-        return "Congratulations ! User Wins...";
-    } else if (userScore < computerScore) {
-        return "Computer Wins the game!";
 
-    } else(userScore = computerScore); {
-        return "It's a Draw!";
+    let winText = "";
+    if (userScore > computerScore) {
+        winText = "Congratulations ! User Wins...";
+    } else if (userScore < computerScore) {
+        winText = "Computer Wins the game!";
+
+    } else {
+        winText = "It's a Draw!";
     }
+    document.getElementById("winner").innerHTML = winText;
 }
 
 function initGame() {
