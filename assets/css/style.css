@@ -6,12 +6,10 @@
 }
 
 #logo {
-    /* font-size: 2rem; */
     padding: 10px;
-    /* margin-left: 5%; */
     font-size: 1.2rem;
     font-weight: 600;
-    margin-left: 5px;
+    margin-left: 7px;
     color: rgb(35, 12, 4);
     text-decoration: underline;
     text-shadow: 2px 1px goldenrod;
@@ -22,12 +20,6 @@ body {
     background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
     text-align: center;
 }
-
-/* #main-page img {
-    width: 30%;
-    height: 50vh;
-    margin-top: 10px;
-} */
 #main-page img{
     width:55%;
     height:35vh;
@@ -37,16 +29,6 @@ body {
     font-size: 2rem;
     text-decoration: underline;
 }
-
-/* #main-page h1 {
-    font-size: 2.5rem;
-    text-decoration: underline;
-} */
-
-/* #main-page p {
-    font-size: 2rem;
-    margin: 10px;
-} */
 #main-page p{
     font-size: 1.6rem;
     margin:10px 0 20px 0;
@@ -55,7 +37,6 @@ body {
 #main-page a {
     font-size: 1.5rem;
     text-decoration: none;
-    /* background: rgb(32, 49, 196); */
     background: rgb(188, 36, 36);
     color: white;
     border: 2px solid black;
@@ -70,42 +51,54 @@ body {
 }
 
 /* Media query for home page */
-/* 
-@media screen and (max-width:785px) {
+
+@media screen and (min-width:485px) {
     #main-page img {
         width: 50%;
         height: 50vh;
     }
-}
-
-@media screen and (max-width:450px) {
-    #main-page img {
-        width: 65%;
-        height: 35vh;
-    }
-
-    #main-page h1 {
-        font-size: 2rem;
-    }
-
-    #main-page p {
-        font-size: 1.6rem;
-    }
-
-    #logo {
-        font-size: 1.3rem;
-        margin-left: 5px;
+    #logo{
+        font-size: 1.8rem;
     }
     #game-area{
-        width:350px;
-        margin:5px;
+        /* width:60vw; */
+        padding:20px;
     }
-    #user-options .icon{
-        margin :15px;
-        width:40px;
-        display:inline-block;
+    #heading h1{
+        font-size:2.5rem;
     }
-} */
+    #game-area h2{
+        font-size: 1.8rem;
+    }
+
+    #choice-score-display,
+    #selection-area,
+    #game-winner{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+}
+@media screen and (min-width:950px){
+    #main-page img {
+        width: 40%;
+        height: 50vh;
+    }
+    #logo{
+        font-size: 1.6rem;
+    }
+    #game-area{
+        width:660px;
+        height:690px;
+        padding:20px;
+    }
+    #heading h1{
+        font-size: 2.5rem;
+    }
+    #game-area h2{
+        font-size: 2rem;
+    }
+}
 
 #game-page {
     background: rgb(192, 241, 241);
@@ -113,13 +106,12 @@ body {
 #game-area{
     height:560px;
     width:95vw;
-    /* padding:15px; */
     margin-left:8px;
     text-align: center;
     background:linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
     border :#1e4f67 1px solid ;
     /* border:2px solid red; */
-    /* margin-left: 10px; */
+    
     
 }
 /* #game-area {
@@ -137,22 +129,10 @@ body {
     font-style: oblique;  
     margin:10px;
 }
-/* #heading h1 {
-    font-size: 2.2rem;
-    text-shadow: 2px 2px 5px red;
-    font-style: oblique;
-} */
 #game-area h2{
     font-size: 0.8rem;
     padding: 5px;  
 }
-/* #game-area h2 {
-    font-size: 1.2rem;
-    padding: 5px;
-} */
-/* #user-options span {
-    font-size: 0.8rem;
-} */
 #user-options h3 {
     font-size:1rem;
 }
@@ -160,20 +140,10 @@ body {
     background: #7ccbf2;
     border-bottom: 2px solid #1e4f67;  
 }
-
-/* #user-clicks {
-    background: #7ccbf2;
-    border-bottom: 2px solid #1e4f67;
-} */
 #selection-area{
     border: 2px solid red;
     margin-top: 10px;
-    /* margin:10px; */
 }
-/* #user-options{
-    border: 2px solid red;
-    margin-top: 15px;
-} */
 #selection-area .icon{
     border: 1.5px solid black;
     border-radius: 30%;
@@ -182,23 +152,12 @@ body {
     cursor: pointer;
     width: 50px;  
 }
-/* #user-options .icon {
-    border: 1.5px solid black;
-    border-radius: 30%;
-    padding: 8px;
-    margin: 5px 20px 10px 20px;
-    cursor: pointer;
-    width: 72px;   
-} */
-
 #selection-area .icon:hover {
     background: rgb(164, 136, 136);
 }
 #choice-score-display {
-    /* height: 260px; */
     border-left: 2px solid red;
     border-right: 2px solid red;
-    /* margin:10px; */
     
 }
 #user-computer-choice {
@@ -206,19 +165,6 @@ body {
     grid-template-columns: 50% 50%;
     height: 120px;
 }
-
-/* #choice-score-display {
-    height: 260px;
-    border-left: 2px solid red;
-    border-right: 2px solid red;
-} */
-
-/* #user-computer-choice {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 170px;
-} */
-
 #user-computer-choice .choice-display {
     border: 1px solid  #1e4f67;
     margin: 10px;
@@ -232,8 +178,6 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     background: #7ccbf2;
-    /* margin: 10px; */
-    
 }
 
 #user-score,
@@ -245,14 +189,12 @@ body {
     background: #7ccbf2;
     border-top: 2px solid #1e4f67;
     height:50px;
-    /* margin: 10px; */
 }
 
 #game-winner {
     background: #7ccbf2;
     border: 2px solid red;
     height:60px;
-    /* margin:10px; */
 }
 
 #winner {
