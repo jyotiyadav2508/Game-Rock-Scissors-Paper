@@ -22,8 +22,8 @@ body {
     text-align: center;
 }
 #main-page img{
-    width:55%;
-    height:30vh;
+    width:80%;
+    height:45vh;
     margin-top: 15px;
 }
 #main-page h1{
@@ -132,6 +132,7 @@ body {
     background: #7ccbf2;
     border-top: 2px solid #1e4f67;
     height:50px;
+    padding:10px;
 }
 
 #game-winner {
@@ -179,6 +180,7 @@ body {
     #game-area{
         width:72vw;
         height:620px;
+        margin-top:25px;
 
     }
     #heading h1{
