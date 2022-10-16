@@ -74,7 +74,7 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
     - choice of options to choose from
     - these options are intractive icons that the user can click to make their choice and play the game.
 
-   ![ Game Options](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/select-icons.png)
+   ![ Game Options](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/game-icons.png)
 
  - __Choice Display Section__ 
 
@@ -92,7 +92,7 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
    ![Result display](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/selection-result.png) 
 
-   ![Score display](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/score.png)
+   ![Score display](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/user-computer-score.png)
 
    ![Display Winner](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/game-winner.png)
 
@@ -135,12 +135,15 @@ I tested the following:
  - __Accessibility__
  
      - Lighthouse test for mobile  
+      
 
       ![Lighthouse test mobile](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/lighthouse-testing-mobile.png)
 
       - Lighthouse test for desktop
 
     ![Lighthouse test desktop](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/lighthouse-testing-desktop.png)  
+
+    ![Lighthouse test desktop](https://8000-jyotiyadav2-gamerocksci-plole5i2l72.ws-eu71.gitpod.io/index.html)
 
 ## Bugs
 
