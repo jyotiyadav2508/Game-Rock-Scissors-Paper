@@ -103,6 +103,20 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
    ![Buttons](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/restart-exit-buttons.png)
 
+## Technologies Used
+
+### Languages Used
+
+  - HTML, CSS and JavaScript were used to creat this website. 
+
+### Frameworks and Programms Used
+
+  - Balsamiq - Used to create wireframes.
+  - Git - For version control.
+  - Github - To save and store the files for the website.
+  - Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
+  - Am I Responsive? To show the website image on arange of devices.
+  - https://ui.dev/amiresponsive To show the website image on arange of devices.
 
 ## Testing  
 
