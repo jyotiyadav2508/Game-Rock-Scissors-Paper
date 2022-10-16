@@ -53,7 +53,7 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
   - Featured at the end of the page is the Start-Game Button, which allows the user to easily navigate to the game page.  
 
-   ![Start button](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/start-button.png)
+   ![Start button](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/start-game-button.png)
 
 - __The Game Section__  
 
@@ -115,8 +115,7 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
   - Git - For version control.
   - Github - To save and store the files for the website.
   - Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
-  - Am I Responsive? To show the website image on arange of devices.
-  - https://ui.dev/amiresponsive To show the website image on arange of devices.
+  - [Am I Responsive?](https://ui.dev/amiresponsive) To show the website image on arange of devices.
 
 ## Testing  
 
