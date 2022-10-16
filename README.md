@@ -136,14 +136,11 @@ I tested the following:
  
      - Lighthouse test for mobile  
       
+     ![Lighthouse test mobile](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/lighthouse-testing-mobile.png)
 
-      ![Lighthouse test mobile](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/lighthouse-testing-mobile.png)
+     - Lighthouse test for desktop
 
-      - Lighthouse test for desktop
-
-    ![Lighthouse test desktop](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/lighthouse-testing-desktop.png)  
-
-    ![Lighthouse test desktop](https://8000-jyotiyadav2-gamerocksci-plole5i2l72.ws-eu71.gitpod.io/index.html)
+     ![Lighthouse test desktop](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/lighthouse-testing-desktop.png)  
 
 ## Bugs
 

@@ -1,12 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    /* font-family: 'Kalam', cursive; */
-
-}
-/* CSS for home page  */
-
-#logo {
+  }
+  
+  /* CSS for home page  */
+  
+  #logo {
     padding: 10px;
     font-size: 1.2rem;
     font-weight: 600;
@@ -15,28 +14,31 @@
     text-decoration: underline;
     text-shadow: 2px 1px goldenrod;
     text-align: left;
-}
-
-body {
+  }
+  
+  body {
     background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
     text-align: center;
-}
-#main-page img{
-    width:80%;
-    height:45vh;
+  }
+  
+  #main-page img {
+    width: 80%;
+    height: 45vh;
     margin-top: 15px;
-}
-#main-page h1{
+  }
+  
+  #main-page h1 {
     font-size: 1.8rem;
     text-decoration: underline;
-    margin:10px 0px;
-}
-#main-page p{
+    margin: 10px 0px;
+  }
+  
+  #main-page p {
     font-size: 1.6rem;
-    margin:10px 0 20px 0;
-}
-
-#main-page a {
+    margin: 10px 0 20px 0;
+  }
+  
+  #main-page a {
     font-size: 1.5rem;
     text-decoration: none;
     background: rgb(188, 36, 36);
@@ -44,191 +46,218 @@ body {
     border: 2px solid black;
     border-radius: 10px;
     padding: 5px;
-}
-
-#main-page a:hover {
+  }
+  
+  #main-page a:hover {
     background: rgb(240, 143, 143);
     border: 2px solid black;
     color: black;
-}
-/* CSS for game.html page  */
-
-#game-page {
+  }
+  
+  /* CSS for game.html page  */
+  
+  #game-page {
     background: rgb(192, 241, 241);
-}
-#game-area{
-    height:550px;
-    width:95vw;
-    margin:auto;
+  }
+  
+  #game-area {
+    height: 550px;
+    width: 95vw;
+    margin: auto;
     text-align: center;
-    background:linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-    border :#1e4f67 1px solid ;
-    padding:2px;
-       
-}
-#heading h1{
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    border: #1e4f67 1px solid;
+    padding: 2px;
+  
+  }
+  
+  #heading h1 {
     font-size: 1.5rem;
     text-shadow: 2px 2px 5px red;
-    font-style: oblique;  
-    margin:10px;
-}
-#game-area h2{
+    font-style: oblique;
+    margin: 10px;
+  }
+  
+  #game-area h2 {
     font-size: 0.8rem;
-    padding: 5px;  
-}
-#user-options h3 {
-    font-size:1rem;
-}
-#user-selections{
+    padding: 5px;
+  }
+  
+  #user-options h3 {
+    font-size: 1rem;
+  }
+  
+  #user-selections {
     background: #7ccbf2;
-    border-bottom: 2px solid #1e4f67;  
-}
-#selection-area{
+    border-bottom: 2px solid #1e4f67;
+  }
+  
+  #selection-area {
     border: 2px solid red;
     margin-top: 10px;
-}
-#selection-area .icon{
+  }
+  
+  #selection-area .icon {
     border: 1.5px solid black;
     border-radius: 30%;
     padding: 8px;
-    margin: 10px ;
+    margin: 10px;
     cursor: pointer;
-    width: 50px;  
-}
-#selection-area .icon:hover {
+    width: 50px;
+  }
+  
+  #selection-area .icon:hover {
     background: rgb(164, 136, 136);
-}
-#choice-score-display {
+  }
+  
+  #choice-score-display {
     border-left: 2px solid red;
     border-right: 2px solid red;
-    
-}
-#user-computer-choice {
+  
+  }
+  
+  #user-computer-choice {
     display: grid;
     grid-template-columns: 50% 50%;
     height: 100px;
-}
-#user-computer-choice .choice-display {
-    border: 1px solid  #1e4f67;
+  }
+  
+  #user-computer-choice .choice-display {
+    border: 1px solid #1e4f67;
     margin: 12px;
     border-radius: 30px;
     border-bottom: 2px solid #1e4f67;
-}
-
-.score {
+  }
+  
+  .score {
     height: 42px;
     border-bottom: 2px solid #1e4f67;
     display: grid;
     grid-template-columns: 50% 50%;
     background: #7ccbf2;
-}
-
-#user-score,
-#computer-score,
-#selections-left {
+  }
+  
+  #user-score,
+  #computer-score,
+  #selections-left {
     color: red;
-}
-#result{
+  }
+  
+  #result {
     background: #7ccbf2;
     border-top: 2px solid #1e4f67;
-    height:50px;
-    padding:10px;
-}
-
-#game-winner {
+    height: 50px;
+    padding: 10px;
+  }
+  
+  #game-winner {
     background: #7ccbf2;
     border: 2px solid red;
-    height:60px;
-}
-
-#winner {
-    color:red;
+    height: 60px;
+  }
+  
+  #winner {
+    color: red;
     font-size: 1.2rem;
-    text-shadow: 1px 1px 2px  rgb(17, 88, 17);
-}
-
-.btn{
+    text-shadow: 1px 1px 2px rgb(17, 88, 17);
+  }
+  
+  .btn {
     font-size: 1rem;
     padding: 3px;
     cursor: pointer;
     border: 2px solid rgb(127, 41, 41);
     border-radius: 10px;
     background-color: #bee6fa;
-    margin:20px;
-}
-
-.btn:hover {
+    margin: 20px;
+  }
+  
+  .btn:hover {
     background-color: rgb(164, 136, 136);
-}
-
-#game-area a {
+  }
+  
+  #game-area a {
     text-decoration: none;
     color: black;
-}
-
-/* Media query for different sizes */
-
-@media screen and (min-width:485px) {
+  }
+  
+  /* Media query for different sizes */
+  
+  @media screen and (min-width:485px) {
     #main-page img {
-        width: 50%;
-        height: 50vh;
+      width: 50%;
+      height: 50vh;
     }
-    #logo{
-        font-size: 1.8rem;
-        margin-left: 25px;
+  
+    #logo {
+      font-size: 1.8rem;
+      margin-left: 25px;
     }
-    #game-area{
-        width:72vw;
-        height:620px;
-        margin-top:25px;
-
+  
+    #game-area {
+      width: 72vw;
+      height: 620px;
+      margin-top: 25px;
+  
     }
-    #heading h1{
-        font-size:2rem;
+  
+    #heading h1 {
+      font-size: 2rem;
     }
-    #game-area h2{
-        font-size: 1.2rem;
+  
+    #game-area h2 {
+      font-size: 1.2rem;
     }
+  
     #user-computer-choice {
-        height: 120px;
-        margin:10px;
+      height: 120px;
+      margin: 10px;
     }
-    #winner{
-        font-size: 1.8rem;
+  
+    #winner {
+      font-size: 1.8rem;
     }
-    .btn{
-        font-size: 1.3rem;
+  
+    .btn {
+      font-size: 1.3rem;
     }
-    #selection-area .icon{
-        margin:20px;
-    } 
-    
-}
-@media screen and (min-width:950px) {
-     #main-page img {
-        width: 37%;
-        height: 50vh;
-    }
-    #main-page h1{
-        font-size: 2.5rem;
-    }
-    #logo{
-        font-size: 2rem;
-    }
-    #game-area{
-        width:55vw;
-        height:670px;
-        
-     }
-    #heading h1{
-        font-size: 2.2rem;
-    }
-    #game-area h2{
-        font-size: 1.4rem;
-    }
-   
+  
     #selection-area .icon {
-        margin: 25px;
+      margin: 20px;
     }
-    
-}
+  
+  }
+  
+  @media screen and (min-width:950px) {
+    #main-page img {
+      width: 37%;
+      height: 50vh;
+    }
+  
+    #main-page h1 {
+      font-size: 2.5rem;
+    }
+  
+    #logo {
+      font-size: 2rem;
+    }
+  
+    #game-area {
+      width: 55vw;
+      height: 670px;
+  
+    }
+  
+    #heading h1 {
+      font-size: 2.2rem;
+    }
+  
+    #game-area h2 {
+      font-size: 1.4rem;
+    }
+  
+    #selection-area .icon {
+      margin: 25px;
+    }
+  
+  }

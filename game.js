@@ -11,9 +11,9 @@ let clickCount = 0;
  * @param event the click event
  */
 function onUserSelection(event) {
-    
+
     if (clickCount >= MAX_ROUNDS) {
-            return;
+        return;
     }
 
     ++clickCount;
@@ -26,12 +26,12 @@ function onUserSelection(event) {
     let compareResult = checkResult(userChoice, computerChoice);
     document.getElementById("compare-result").innerHTML = compareResult;
 
-   
+
     document.getElementById("selections-left").innerHTML = MAX_ROUNDS - clickCount;
 
     if (clickCount === MAX_ROUNDS) {
-    displayWinner();
-        
+        displayWinner();
+
     }
 }
 /**
@@ -43,7 +43,7 @@ function renderChoice(isUser, choice) {
     let choiceElement = isUser ? "user-choice" : "computer-choice";
 
     document.getElementById(choiceElement).innerHTML =
-     `<i class= "fa-solid fa-hand-${choice} fa-2x"></i>`;
+        `<i class= "fa-solid fa-hand-${choice} fa-2x"></i>`;
 }
 //Generate computer's random choice
 
