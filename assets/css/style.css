@@ -2,13 +2,17 @@
     margin: 0;
     padding: 0;
     font-family: 'Kalam', cursive;
+
 }
 
 #logo {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     padding: 10px;
-    margin-left: 5%;
-    color: rgb(170, 56, 14);
+    /* margin-left: 5%; */
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 5px;
+    color: rgb(35, 12, 4);
     text-decoration: underline;
     text-shadow: 2px 1px goldenrod;
     text-align: left;
@@ -19,26 +23,40 @@ body {
     text-align: center;
 }
 
-#main-page img {
+/* #main-page img {
     width: 30%;
     height: 50vh;
     margin-top: 10px;
+} */
+#main-page img{
+    width:55%;
+    height:35vh;
+    margin-top: 15px;
 }
-
-#main-page h1 {
-    font-size: 2.5rem;
+#main-page h1{
+    font-size: 2rem;
     text-decoration: underline;
 }
 
-#main-page p {
+/* #main-page h1 {
+    font-size: 2.5rem;
+    text-decoration: underline;
+} */
+
+/* #main-page p {
     font-size: 2rem;
     margin: 10px;
+} */
+#main-page p{
+    font-size: 1.6rem;
+    margin:10px 0 20px 0;
 }
 
 #main-page a {
     font-size: 1.5rem;
     text-decoration: none;
-    background: rgb(32, 49, 196);
+    /* background: rgb(32, 49, 196); */
+    background: rgb(188, 36, 36);
     color: white;
     border: 2px solid black;
     border-radius: 10px;
@@ -52,7 +70,7 @@ body {
 }
 
 /* Media query for home page */
-
+/* 
 @media screen and (max-width:785px) {
     #main-page img {
         width: 50%;
@@ -79,20 +97,32 @@ body {
         margin-left: 5px;
     }
     #game-area{
-        width:50%;
+        width:350px;
+        margin:5px;
     }
     #user-options .icon{
         margin :15px;
         width:40px;
         display:inline-block;
     }
-}
+} */
 
 #game-page {
     background: rgb(192, 241, 241);
 }
-
-#game-area {
+#game-area{
+    height:560px;
+    width:95vw;
+    /* padding:15px; */
+    margin-left:8px;
+    text-align: center;
+    background:linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    border :#1e4f67 1px solid ;
+    /* border:2px solid red; */
+    /* margin-left: 10px; */
+    
+}
+/* #game-area {
     height: 690px;
     width: 660px;
     margin: 2px auto auto auto;
@@ -100,65 +130,98 @@ body {
     padding: 15px;
     background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
     border :#1e4f67 1px solid ;
+} */
+#heading h1{
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 5px red;
+    font-style: oblique;  
+    margin:10px;
 }
-
-#heading h1 {
+/* #heading h1 {
     font-size: 2.2rem;
     text-shadow: 2px 2px 5px red;
     font-style: oblique;
-
+} */
+#game-area h2{
+    font-size: 0.8rem;
+    padding: 5px;  
 }
-
-#game-area h2 {
+/* #game-area h2 {
     font-size: 1.2rem;
     padding: 5px;
-}
-
-#user-options p {
+} */
+/* #user-options span {
     font-size: 0.8rem;
+} */
+#user-options h3 {
+    font-size:1rem;
+}
+#user-selections{
+    background: #7ccbf2;
+    border-bottom: 2px solid #1e4f67;  
 }
 
-#user-clicks {
+/* #user-clicks {
     background: #7ccbf2;
     border-bottom: 2px solid #1e4f67;
+} */
+#selection-area{
+    border: 2px solid red;
+    margin-top: 10px;
+    /* margin:10px; */
 }
-
-#user-options{
+/* #user-options{
     border: 2px solid red;
     margin-top: 15px;
+} */
+#selection-area .icon{
+    border: 1.5px solid black;
+    border-radius: 30%;
+    padding: 8px;
+    margin: 10px ;
+    cursor: pointer;
+    width: 50px;  
 }
-#user-options span{
-    font-size: 1.2rem;
-}
-
-#user-options .icon {
+/* #user-options .icon {
     border: 1.5px solid black;
     border-radius: 30%;
     padding: 8px;
     margin: 5px 20px 10px 20px;
     cursor: pointer;
-    width: 72px;
-    
-}
-#user-options .icon:hover {
+    width: 72px;   
+} */
+
+#selection-area .icon:hover {
     background: rgb(164, 136, 136);
 }
-
 #choice-score-display {
-    height: 260px;
+    /* height: 260px; */
     border-left: 2px solid red;
     border-right: 2px solid red;
+    /* margin:10px; */
+    
 }
-
 #user-computer-choice {
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 170px;
+    height: 120px;
 }
+
+/* #choice-score-display {
+    height: 260px;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+} */
+
+/* #user-computer-choice {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 170px;
+} */
 
 #user-computer-choice .choice-display {
     border: 1px solid  #1e4f67;
-    margin: 30px;
+    margin: 10px;
     border-radius: 30px;
     border-bottom: 2px solid #1e4f67;
 }
@@ -169,6 +232,7 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     background: #7ccbf2;
+    /* margin: 10px; */
     
 }
 
@@ -181,28 +245,30 @@ body {
     background: #7ccbf2;
     border-top: 2px solid #1e4f67;
     height:50px;
+    /* margin: 10px; */
 }
 
 #game-winner {
     background: #7ccbf2;
     border: 2px solid red;
-    height:80px;
+    height:60px;
+    /* margin:10px; */
 }
 
 #winner {
     color: red;
-    font-size: 2rem;
-    text-shadow: 2px 2px green;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px rgb(17, 88, 17);
 }
 
 .btn{
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 3px;
     cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid rgb(127, 41, 41);
     border-radius: 10px;
     background-color: #bee6fa;
-    margin: 25px;
+    margin: 20px;
 }
 
 .btn:hover {
