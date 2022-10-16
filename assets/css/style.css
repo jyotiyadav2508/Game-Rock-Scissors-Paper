@@ -4,6 +4,7 @@
     font-family: 'Kalam', cursive;
 
 }
+/* CSS for home page  */
 
 #logo {
     padding: 10px;
@@ -49,56 +50,7 @@ body {
     border: 2px solid black;
     color: black;
 }
-
-/* Media query for home page */
-
-@media screen and (min-width:485px) {
-    #main-page img {
-        width: 50%;
-        height: 50vh;
-    }
-    #logo{
-        font-size: 1.8rem;
-    }
-    #game-area{
-        /* width:60vw; */
-        padding:20px;
-    }
-    #heading h1{
-        font-size:2.5rem;
-    }
-    #game-area h2{
-        font-size: 1.8rem;
-    }
-
-    #choice-score-display,
-    #selection-area,
-    #game-winner{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    
-}
-@media screen and (min-width:950px){
-    #main-page img {
-        width: 40%;
-        height: 50vh;
-    }
-    #logo{
-        font-size: 1.6rem;
-    }
-    #game-area{
-        width:660px;
-        height:690px;
-        padding:20px;
-    }
-    #heading h1{
-        font-size: 2.5rem;
-    }
-    #game-area h2{
-        font-size: 2rem;
-    }
-}
+/* CSS for game.html page  */
 
 #game-page {
     background: rgb(192, 241, 241);
@@ -106,23 +58,13 @@ body {
 #game-area{
     height:560px;
     width:95vw;
-    margin-left:8px;
+    margin:auto;
     text-align: center;
     background:linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
     border :#1e4f67 1px solid ;
-    /* border:2px solid red; */
-    
-    
+    padding:2px;
+       
 }
-/* #game-area {
-    height: 690px;
-    width: 660px;
-    margin: 2px auto auto auto;
-    text-align: center;
-    padding: 15px;
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-    border :#1e4f67 1px solid ;
-} */
 #heading h1{
     font-size: 1.5rem;
     text-shadow: 2px 2px 5px red;
@@ -163,17 +105,17 @@ body {
 #user-computer-choice {
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 120px;
+    height: 100px;
 }
 #user-computer-choice .choice-display {
     border: 1px solid  #1e4f67;
-    margin: 10px;
+    margin: 12px;
     border-radius: 30px;
     border-bottom: 2px solid #1e4f67;
 }
 
 .score {
-    height: 40px;
+    height: 42px;
     border-bottom: 2px solid #1e4f67;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -198,9 +140,9 @@ body {
 }
 
 #winner {
-    color: red;
+    color:red;
     font-size: 1.2rem;
-    text-shadow: 2px 2px rgb(17, 88, 17);
+    text-shadow: 1px 2px  rgb(17, 88, 17);
 }
 
 .btn{
@@ -210,7 +152,7 @@ body {
     border: 2px solid rgb(127, 41, 41);
     border-radius: 10px;
     background-color: #bee6fa;
-    margin: 20px;
+    margin: 15px 20px 0px 20px;
 }
 
 .btn:hover {
@@ -220,4 +162,65 @@ body {
 #game-area a {
     text-decoration: none;
     color: black;
+}
+
+/* Media query for different sizes */
+
+@media screen and (min-width:485px) {
+    #main-page img {
+        width: 50%;
+        height: 50vh;
+    }
+    #logo{
+        font-size: 1.8rem;
+        margin-left: 25px;
+    }
+    #game-area{
+        width:72vw;
+        height:620px;
+
+    }
+    #heading h1{
+        font-size:2rem;
+    }
+    #game-area h2{
+        font-size: 1.2rem;
+    }
+    #user-computer-choice {
+        height: 140px;
+    }
+    #winner{
+        font-size: 1.8rem;
+    }
+    .btn{
+        font-size: 1.3rem;
+    }
+    #selection-area .icon{
+        margin:5px 20px;
+    } 
+    
+}
+@media screen and (min-width:950px) {
+     #main-page img {
+        width: 40%;
+        height: 55vh;
+    }
+    #logo{
+        font-size: 2rem;
+    }
+    #game-area{
+        width:55vw;
+        height:680px;
+        
+     }
+    #heading h1{
+        font-size: 2.2rem;
+    }
+    #game-area h2{
+        font-size: 1.4rem;
+    }
+    #selection-area .icon {
+        margin:15px 30px;
+    }
+    
 }
