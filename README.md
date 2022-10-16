@@ -4,7 +4,7 @@ The live link can be found here - https://jyotiyadav2508.github.io/Game-Rock-Sci
 Fun Club website provides a game "Rock-Scissors-Paper". This site is targeted towards adults and children to have fun time, reduces stress, to have a little break during work and study. It is not always possible to play with friends; therefore, this game provides Computer as your opponent. The computer chooses its options randomly, therefore game gives you a fair result. User of this game will learn the rules of Rock, Scissors, Paper which they can apply in decision making with others in their lives.
 
 
-![Responsive Mockup](...............)
+![Responsive Mockup](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/mockup-img.png)
 
 ## UX/UI 
 
@@ -47,13 +47,13 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
   - The image shows the name of all three icons, with which we are going to play the game and also describes the rules of the game "Rock, scissors, Paper".
   - This game is played between user and computer.
 
-   ![Image of Home page ](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/heading-image.png)
+   ![Image of Home page ](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/main-image.png)
 
 - __Nav Button__ 
 
   - Featured at the end of the page is the Start-Game Button, which allows the user to easily navigate to the game page.  
 
-   ![Start button](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/nav-button.png)
+   ![Start button](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/start-button.png)
 
 - __The Game Section__  
 
@@ -65,7 +65,7 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
   - It shows the number of selections currently available.
 
-   ![Selections Left]()
+   ![Selections Left](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/current-selections.png)
 
 - __The Game Options__  
 
@@ -74,14 +74,14 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
     - choice of options to choose from
     - these options are intractive icons that the user can click to make their choice and play the game.
 
-   ![ Game Options](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/user-options.png)
+   ![ Game Options](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/select-icons.png)
 
  - __Choice Display Section__ 
 
    - When user clicks an option, the image relating to their choice is shown on the user-choice area.
    - The Java Script code chooses a random option for the computer player and displays the image relating to computer's choice on computer-choice  area.
 
-    ![Choice display](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/display-choice.png) 
+    ![Choice display](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/choice-display.png) 
 
  - __The Result__ 
 
@@ -90,7 +90,9 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
    - After 5 selections, game winner is announced.
    - Once the game is over, user can either restart the game by clicking the restart button or exit the game page by clicking exit button. The Exit button navigates the user to home page.
 
-   ![Result display](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/result.png) 
+   ![Result display](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/selection-result.png) 
+
+   ![Score display](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/score.png)
 
    ![Display Winner](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/game-winner.png)
 
@@ -103,6 +105,12 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
 
 ## Testing  
+
+I tested the following:
+  - both the pages of the website on different browsers: Chrome, Edge, Safari.
+  - when a nav element is clicked, it provides the navigation link to the respective page. 
+  - the responsiveness of the website on different screen sizes (Mobile S-320px, Mobile M-375px, Mobile L-425px, Tablet-768px, Laptop-1024px) using Devtools sevice toolbar. The different CSS propoerties for font, hover, image size and buttons work as expected.
+  - the logic of Java Script code like user's click event, generates randomly computer choice, display user and computer choice in their respective area, selection result, score increment as per result, selections left and winner is announced as expected. 
 
 ### Validator Testing
 
@@ -124,6 +132,16 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
      - Largest function has 12 statements in it, while the median is 4.5.
      - The most complex function has a cyclomatic complexity value of 8 while the median is 3.
 
+ - __Accessibility__
+ 
+     - Lighthouse test for mobile  
+
+      ![Lighthouse test mobile](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/lighthouse-testing-mobile.png)
+
+      - Lighthouse test for desktop
+
+    ![Lighthouse test desktop](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/lighthouse-testing-desktop.png)  
+
 ## Bugs
 
 ### Fixed bugs
@@ -131,13 +149,8 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
   - User Choice was not working while clicking on the text instead of icon. It is fixed by replacing "event.Target.id;" with "event.currentTarget.id;".
   - While checking game.html with W3C validator,following errors were shown :
     - "Element p is not allowed as child of element i" for user choice icons - Fix by replacing p element by span element.
-    -  The element a must not appear as descendent of button element - Fix by removing button element and giving a class name in a tag.
+    -  The element a must not appear as descendent of button element - Fix by removing button element and giving a class name direct in a tag.
  
-
-### Unfixed bugs
-
-  
-  
 
 ## Deployment
 
