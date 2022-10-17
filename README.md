@@ -159,7 +159,7 @@ I tested the following:
 
 ### Fixed bugs
 
-  - Responsiveness for larger devives was not working:
+  - Responsiveness for larger devices was not working:
     - fix by shifting media query from before default css code to the end of default css code. 
 
   - While checking game.html with W3C validator,following errors were shown :
