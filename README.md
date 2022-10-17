@@ -29,7 +29,7 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
 ## Wireframes
 
- To see all wireframes created in UX stage. ![Wireframes]() 
+ All wireframes created in UX stage. [See here](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/assets/Rock-paper-scissors-wireframe.pdf)
 
 ## Features
 
@@ -147,13 +147,9 @@ I tested the following:
 
  - __Accessibility__
  
-     - Lighthouse test for mobile  
-      
-     ![Lighthouse test mobile](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/lighthouse-testing-mobile.png)
+     - Lighthouse test result for mobile [See here](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/lighthouse-testing-mobile.png)
 
-     - Lighthouse test for desktop
-
-     ![Lighthouse test desktop](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/lighthouse-testing-desktop.png)  
+     - Lighthouse test result for desktop [See here](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/lighthouse-testing-desktop.png)  
 
 ## Bugs
 
