@@ -125,8 +125,9 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 I tested the following:
   - both the pages of the website on different browsers: Chrome, Edge, Safari.
   - the responsiveness of the website on different screen sizes (Mobile S-320px, Mobile M-375px, Mobile L-425px, Tablet-768px, Laptop-1024px) using Devtools sevice toolbar. The different CSS propoerties for font, hover, image size and buttons work as expected.
-
-  ![Manual testing report](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/manual-testing-features.png)
+  
+  - Feature test report:
+    ![Manual testing report](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/manual-testing-features.png)
 
 ### Validator Testing
 
