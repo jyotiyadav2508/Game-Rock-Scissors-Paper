@@ -13,6 +13,7 @@ let clickCount = 0;
 function onUserSelection(event) {
 
     if (clickCount >= MAX_ROUNDS) {
+        alert("Game Over! Click Restart to play again");
         return;
     }
 

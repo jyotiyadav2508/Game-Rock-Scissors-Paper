@@ -111,19 +111,22 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
 ### Frameworks and Programms Used
 
-  - Balsamiq - Used to create wireframes.
+  - Balsamiq - To create wireframes.
   - Git - For version control.
   - Github - To save and store the files for the website.
   - Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
   - [Am I Responsive?](https://ui.dev/amiresponsive) To show the website image on arange of devices.
+  - Microsoft Word - To create manual test report.
 
-## Testing  
+## Testing 
+
+### Menual Testing
 
 I tested the following:
   - both the pages of the website on different browsers: Chrome, Edge, Safari.
-  - when a nav element is clicked, it provides the navigation link to the respective page. 
   - the responsiveness of the website on different screen sizes (Mobile S-320px, Mobile M-375px, Mobile L-425px, Tablet-768px, Laptop-1024px) using Devtools sevice toolbar. The different CSS propoerties for font, hover, image size and buttons work as expected.
-  - the logic of Java Script code like user's click event, generates randomly computer choice, display user and computer choice in their respective area, selection result, score increment as per result, selections left and winner is announced as expected. 
+
+  ![Manual testing report](https://github.com/jyotiyadav2508/Game-Rock-Scissors-Paper/blob/main/screenshots/manual-testing-features.png)
 
 ### Validator Testing
 
@@ -155,7 +158,9 @@ I tested the following:
 
 ### Fixed bugs
 
-  - User Choice was not working while clicking on the text instead of icon. It is fixed by replacing "event.Target.id;" with "event.currentTarget.id;".
+  - Responsiveness for larger devives was not working:
+    - fix by shifting media query from before default css code to the end of default css code. 
+
   - While checking game.html with W3C validator,following errors were shown :
     - "Element p is not allowed as child of element i" for user choice icons - Fix by replacing p element by span element.
     -  The element a must not appear as descendent of button element - Fix by removing button element and giving a class name direct in a tag.
