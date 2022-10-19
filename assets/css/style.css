@@ -30,7 +30,7 @@
   #main-page h1 {
     font-size: 1.8rem;
     text-decoration: underline;
-    margin: 10px 0px;
+    margin: 10px 0;
   }
   
   #main-page p {
@@ -198,7 +198,6 @@
       width: 72vw;
       height: 620px;
       margin-top: 25px;
-  
     }
   
     #heading h1 {
@@ -225,7 +224,6 @@
     #selection-area .icon {
       margin: 20px;
     }
-  
   }
   
   @media screen and (min-width:950px) {
@@ -245,7 +243,6 @@
     #game-area {
       width: 55vw;
       height: 670px;
-  
     }
   
     #heading h1 {
@@ -259,5 +256,4 @@
     #selection-area .icon {
       margin: 25px;
     }
-  
   }

@@ -109,7 +109,7 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
 
   - HTML, CSS and JavaScript were used to creat this website. 
 
-### Frameworks and Programms Used
+### Frameworks and Programs Used
 
   - Balsamiq - To create wireframes.
   - Git - For version control.
