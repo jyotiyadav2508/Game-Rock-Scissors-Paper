@@ -23,7 +23,7 @@ The site goal is to provide a user simple, fair and well instructed game. Also m
   
 ## Design
 
-- Choose a variety of greens, yellows, oranges, browms, blues, black.
+- Choose a variety of greens, yellows, oranges, browns, blues, black.
 - Use google font to import the chosen fonts for use in the site.
 - Ensure images and icons are relevant to context.
 
